@@ -1,4 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+} /* 1rem = 10px */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 5rem;
+  position: sticky;
+
+  background: rgba(6, 8, 17, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.navbar .logo span {
+  background: linear-gradient(0deg, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-links a.active {
+  color: #93c5fd;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #60a5fa;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+  padding: 0.9rem 1.8rem;
+  color: #64748b;
+  font-size: 1.3rem;
+}
+
+.icon-btn {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background: rgba(30, 41, 59, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+  font-size: 1.5rem;
+}
+
+.nav-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #10172c;
+  color: #fff;
+}
+
+.planet {
+  margin-top: 6.4rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
 img {
-  height: 200px;
-  width: 250px;
+  height: auto;
+  width: 20rem;
+}
+
+img:hover {
+  transform: scaleY(1.05);
+}
+
+.planet-card {
+  height: 21rem;
+  width: 46rem;
+  display: flex;
+  gap: 2rem;
+  border: 2px solid #1c4382;
+  background-color: #080c15;
+
+  overflow: hidden;
+}
+
+.planet-card:hover {
+  /* transform: translate(0, -10px); */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border: 2px solid #08229a;
+}
+.whole-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.4rem;
+}
+.planet-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  justify-content: center;
+  max-width: 120rem;
+  margin: 0 auto; */
+  max-width: 140rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.planet-info h3 {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+
+.planet-info > p {
+  font-size: 1.6rem;
+  text-align: left;
+  color: #888484;
+}
+
+.planet-info {
+  padding: 1.6rem;
+  padding-bottom: 2.4rem;
+}
+
+button {
+  background: transparent;
+  color: #3876bd;
+  padding: 1rem;
+  border-radius: 999rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-color: #93c5fd;
+  font-weight: 700;
+}
+
+button:hover {
+  border-color: #0a1751;
+  background-color: #1c4382;
+  color: #fff;
 }
